@@ -1,0 +1,10 @@
+@import "theme/all-settings";
+
+.Toto {
+  color: $my-var-from-settings;
+
+  &__child {
+    color: $my-var-from-settings;
+  }
+}
+

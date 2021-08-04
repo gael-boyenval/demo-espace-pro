@@ -1,0 +1,23 @@
+---
+to: src/<%= dir %>/<%= h.capitalize(name) %>/<%= h.capitalize(name) %>.stories.tsx
+---
+import React from 'react'
+
+import <%= h.capitalize(name) %> from './<%= h.capitalize(name) %>'
+
+export default {
+  title: 'ui-kit/<%= h.capitalize(name) %>',
+  component: <%= h.capitalize(name) %>,
+}
+
+const Template = args => (
+  <<%= h.capitalize(name) %> {...args}>
+    {args.children}
+  </<%= h.capitalize(name) %>>
+)
+
+export const Default = Template.bind({})
+
+Default.args = {
+  arg: 'arg',
+}

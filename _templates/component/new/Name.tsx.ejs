@@ -1,0 +1,18 @@
+---
+to: src/<%= dir %>/<%= h.capitalize(name) %>/<%= h.capitalize(name) %>.tsx
+---
+import React from 'react'
+
+import styles from './<%= h.capitalize(name) %>.scss'
+
+interface I<%= h.capitalize(name) %>Props {
+
+}
+
+const <%= h.capitalize(name) %> = ({}: I<%= h.capitalize(name) %>Props): React.ReactElement => (
+  <div className={styles.<%= h.capitalize(name) %>}>
+    Hello <%= h.capitalize(name) %>
+  </div>
+)
+
+export default <%= h.capitalize(name) %>
